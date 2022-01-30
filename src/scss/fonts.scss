@@ -1,0 +1,21 @@
+@font-face {
+	font-family: opensans;
+	font-display: swap;
+	src: url("../fonts/opensans-italic-variablefont_wdth,wght.woff2") format("woff2"), url("../fonts/opensans-italic-variablefont_wdth,wght.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+}
+@font-face {
+	font-family: mochiypoppone;
+	font-display: swap;
+	src: url("../fonts/mochiypoppone-regular.woff2") format("woff2"), url("../fonts/mochiypoppone-regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: opensans;
+	font-display: swap;
+	src: url("../fonts/opensans-variablefont_wdth,wght.woff2") format("woff2"), url("../fonts/opensans-variablefont_wdth,wght.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
