@@ -24,10 +24,11 @@ export const fontsStyle = () => {
             fs.writeFile(fontsScss, '', cb);
             fontsFiles.forEach(fontFile => {
                 if (fontFile.includes('.ttf')) {
-                    let fontFileName = fontFile.split('.')[0].toLowerCase();
+                    let fontFileName = fontFile.split('.')[0];
                     let fontName = fontFileName.split('-')[0] || fontFileName;
-                    let fontWeight = fontFileName.split('-')[1] || fontFileName;
-                    let fontStyle = fontFileName.split('-')[1].includes('italic') ? 'italic' : 'normal';
+                    let fontFileNameLower = fontFileName.toLowerCase();
+                    let fontWeight = fontFileNameLower.split('-')[1] || fontFileNameLower;
+                    let fontStyle = fontFileNameLower.split('-')[1].includes('italic') ? 'italic' : 'normal';
 
                     if (fontWeight.includes('thin')) {
                         fontWeight = 100;
